@@ -8,31 +8,17 @@ import numpy as np
 st.title('Basketball Player Status')
 
 
-t.write("# IMPORTANT LINKS")
-
-st.write("## Profile")
-Profile="https://www.rstiwari.com"
-st.markdown(Profile, unsafe_allow_html=True)
-
-st.write("## Blog")
-Blog="https://tiwari11-rst.medium.com/"
-st.markdown(Blog, unsafe_allow_html=True)
-
-st.write("###Dataset Link")
-
-Dataset_Link="https://github.com/allisonhorst/palmerpenguins"
-st.markdown(Dataset_Link, unsafe_allow_html=True)
-
-
-
+st.header('Webscraping of Basketball player  data')
 
 st.markdown("""
-#Webscraping of NBA player stats data!
-## Important Links
-Dataset:https://www.basketball-reference.com
-Profile:https://www.rstiwari.com
-Blog: https://tiwari11-rst.medium.com/
+**Important Links**\n
+**Dataset :** https://www.basketball-reference.com \n
+**Profile :** https://www.rstiwari.com \n
+**Blog :** https://tiwari11-rst.medium.com/ \n
 """)
+
+
+
 
 st.sidebar.header('User Input Features')
 selected_year = st.sidebar.selectbox('Year', list(reversed(range(1950,2020))))
