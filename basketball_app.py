@@ -7,9 +7,31 @@ import numpy as np
 
 st.title('Basketball Player Status')
 
+
+t.write("# IMPORTANT LINKS")
+
+st.write("## Profile")
+Profile="https://www.rstiwari.com"
+st.markdown(Profile, unsafe_allow_html=True)
+
+st.write("## Blog")
+Blog="https://tiwari11-rst.medium.com/"
+st.markdown(Blog, unsafe_allow_html=True)
+
+st.write("###Dataset Link")
+
+Dataset_Link="https://github.com/allisonhorst/palmerpenguins"
+st.markdown(Dataset_Link, unsafe_allow_html=True)
+
+
+
+
 st.markdown("""
-Webscraping of NBA player stats data!
-Dataset:(https://www.basketball-reference.com/).
+#Webscraping of NBA player stats data!
+## Important Links
+Dataset:https://www.basketball-reference.com
+Profile:https://www.rstiwari.com
+Blog: https://tiwari11-rst.medium.com/
 """)
 
 st.sidebar.header('User Input Features')
