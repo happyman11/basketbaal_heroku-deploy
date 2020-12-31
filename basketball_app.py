@@ -5,12 +5,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-st.title('NBA Player Stats Explorer')
+st.title('Basketball Player Status')
 
 st.markdown("""
-This app performs simple webscraping of NBA player stats data!
-* **Python libraries:** base64, pandas, streamlit
-* **Data source:** [Basketball-reference.com](https://www.basketball-reference.com/).
+Webscraping of NBA player stats data!
+Dataset:(https://www.basketball-reference.com/).
 """)
 
 st.sidebar.header('User Input Features')
@@ -43,8 +42,6 @@ st.header('Display Player Stats of Selected Team(s)')
 st.write('Data Dimension: ' + str(df_selected_team.shape[0]) + ' rows and ' + str(df_selected_team.shape[1]) + ' columns.')
 st.dataframe(df_selected_team)
 
-# Download NBA player stats data
-# https://discuss.streamlit.io/t/how-to-download-file-in-streamlit/1806
 def filedownload(df):
     csv = df.to_csv(index=False)
     b64 = base64.b64encode(csv.encode()).decode()  # strings <-> bytes conversions
@@ -53,16 +50,3 @@ def filedownload(df):
 
 st.markdown(filedownload(df_selected_team), unsafe_allow_html=True)
 
-# Heatmap
-if st.button('Intercorrelation Heatmap'):
-    st.header('Intercorrelation Matrix Heatmap')
-    df_selected_team.to_csv('output.csv',index=False)
-    df = pd.read_csv('output.csv')
-
-    corr = df.corr()
-    mask = np.zeros_like(corr)
-    mask[np.triu_indices_from(mask)] = True
-    with sns.axes_style("white"):
-        f, ax = plt.subplots(figsize=(7, 5))
-        ax = sns.heatmap(corr, mask=mask, vmax=1, square=True)
-    st.pyplot()
