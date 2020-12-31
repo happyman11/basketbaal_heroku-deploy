@@ -21,7 +21,7 @@ st.markdown("""
 
 
 st.sidebar.header('User Input Features')
-selected_year = st.sidebar.selectbox('Year', list(reversed(range(1950,2020))))
+selected_year = st.sidebar.selectbox('Year', list(reversed(range(1947,2021))))
 
 # Web scraping of NBA player stats
 @st.cache
