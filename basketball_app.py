@@ -19,7 +19,7 @@ with st.beta_container():
 <!------ Include the above in your HEAD tag ---------->
 
 <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark" >
-  <a class="navbar-brand" href="https://www.rstiwari.com" >Profile</a>
+  <a class="navbar-brand" href="https://www.rstiwari.com" target="_blank">Profile</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -27,14 +27,14 @@ with st.beta_container():
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href=" https://tiwari11-rst.medium.com/" >
+        <a class="nav-link" href=" https://tiwari11-rst.medium.com/" target="_blank" >
           <i class="fa fa-home"></i>
           Medium
           <span class="sr-only">(current)</span>
           </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href=" https://happyman11.github.io/" >
+        <a class="nav-link" href=" https://happyman11.github.io/" target="_blank">
           <i class="fa fa-envelope-o">
             <span class="badge badge-danger">Git Pages</span>
           </i>
@@ -43,7 +43,7 @@ with st.beta_container():
       </li>
       
         <li class="nav-item">
-        <a class="nav-link" href="https://happyman11.github.io/" >
+        <a class="nav-link" href="https://happyman11.github.io/" target="_blank">
           <i class="fa fa-globe">
             <span class="badge badge-success">Badges</span>
           </i>
@@ -55,7 +55,7 @@ with st.beta_container():
       </li>
       
       <li class="nav-item">
-        <a class="nav-link disabled" href="https://ravishekhartiwari.blogspot.com/" >
+        <a class="nav-link disabled" href="https://ravishekhartiwari.blogspot.com/" target="_blank">
           <i class="fa fa-envelope-o">
             <span class="badge badge-warning">Blogspot</span>
           </i>
