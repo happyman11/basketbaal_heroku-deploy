@@ -5,7 +5,7 @@ import base64
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-
+st.set_page_config(layout="wide")
 st.title('Basketball Player Status')
 
 with st.beta_container():
