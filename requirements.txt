@@ -4,3 +4,4 @@ numpy
 seaborn
 matplotlib
 base58
+lxml
